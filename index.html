@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satisfaction Sound Mixer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Universal Control -->
+  <div class="top-controls">
+    <button id="toggle-all" onclick="toggleAll()">🔊 Play All</button>
+  </div>
+
+  <h1 class="title">🎧 Satisfaction Sound Mixer</h1>
+  
+  <div class="mixer">
+    <div class="sound-card">
+      <h3>🌧 Rain</h3>
+      <audio id="rain" loop>
+        <source src="resources/Rain_Sounds.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" onclick="toggleSound('rain', this)">▶️</button>
+      <input type="range" min="0" max="1" step="0.01" value="0.5" 
+             class="vertical-slider"
+             onchange="setVolume('rain', this.value)">
+    </div>
+
+    <div class="sound-card">
+      <h3>🦗 Bugs</h3>
+      <audio id="bugs" loop>
+        <source src="resources/Jungle_Nightlife.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" onclick="toggleSound('bugs', this)">▶️</button>
+      <input type="range" min="0" max="1" step="0.01" value="0.5"
+             class="vertical-slider"
+             onchange="setVolume('bugs', this.value)">
+    </div>
+
+    <div class="sound-card">
+      <h3>🌊 Waves</h3>
+      <audio id="waves" loop>
+        <source src="resources/Ocean_Waves.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" onclick="toggleSound('waves', this)">▶️</button>
+      <input type="range" min="0" max="1" step="0.01" value="0.5"
+             class="vertical-slider"
+             onchange="setVolume('waves', this.value)">
+    </div>
+
+    <div class="sound-card">
+      <h3>🔥 Fire</h3>
+      <audio id="fire" loop>
+        <source src="resources/Fire_sound.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" onclick="toggleSound('fire', this)">▶️</button>
+      <input type="range" min="0" max="1" step="0.01" value="0.5"
+             class="vertical-slider"
+             onchange="setVolume('fire', this.value)">
+    </div>
+    
+    <div class="sound-card">
+      <h3>🌀 Theta Waves</h3>
+      <audio id="theta" loop>
+        <source src="resources/Theta_Waves.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" onclick="toggleSound('theta', this)">▶️</button>
+      <input type="range" min="0" max="1" step="0.01" value="0.5"
+             class="vertical-slider"
+             onchange="setVolume('theta', this.value)">
+    </div>
+
+    <div class="sound-card">
+      <h3>❄ Winter Storm</h3>
+      <audio id="storm" loop>
+        <source src="resources/Winter_Storm.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" onclick="toggleSound('storm', this)">▶️</button>
+      <input type="range" min="0" max="1" step="0.01" value="0.5"
+             class="vertical-slider"
+             onchange="setVolume('storm', this.value)">
+    </div>
+
+    <div class="sound-card">
+      <h3>🏞 River</h3>
+      <audio id="river" loop>
+        <source src="resources/river_sound.mp3" type="audio/mpeg">
+      </audio>
+      <button class="play-btn" onclick="toggleSound('river', this)">▶️</button>
+      <input type="range" min="0" max="1" step="0.01" value="0.5"
+             class="vertical-slider"
+             onchange="setVolume('river', this.value)">
+    </div>
+
+    <div class="sound-card">
+  <h3>🐦 Birds</h3>
+  <audio id="birds" loop>
+    <source src="resources/Bird_sound.mp3" type="audio/mpeg">
+  </audio>
+  <button class="play-btn" onclick="toggleSound('birds', this)">▶️</button>
+  <input type="range" min="0" max="1" step="0.01" value="0.5"
+         class="vertical-slider"
+         onchange="setVolume('birds', this.value)">
+</div>
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
